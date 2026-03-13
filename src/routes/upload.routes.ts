@@ -13,9 +13,4 @@ router.post(
   uploadFields
 );
 
-// router.post(
-//   '/files',
-//   upload.any(),
-//   uploadFields
-// );
 export default router;

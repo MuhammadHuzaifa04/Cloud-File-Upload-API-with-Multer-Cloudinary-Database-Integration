@@ -17,9 +17,6 @@ export const uploadFields = async (
 
     const uploadToCloudinary = (file: Express.Multer.File) => {
       return new Promise<any>((resolve, reject) => {
-        //This creates a Cloudinary upload stream.
-        // It allows uploading files directly from memory.
-        // Without saving them locally.
         const stream = cloudinary.uploader.upload_stream(
           { folder: 'uploads' },
           (error, result) => {

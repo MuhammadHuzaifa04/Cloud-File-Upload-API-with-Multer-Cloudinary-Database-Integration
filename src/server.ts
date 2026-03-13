@@ -3,7 +3,6 @@ dotenv.config();
 
 import mongoose from 'mongoose';
 import app from './app';
-// import cloudinary from './config/cloudinary';
 
 const PORT = process.env.PORT || 5000;
 
@@ -20,5 +19,3 @@ mongoose
     console.log('DB Error:', err);
   });
 
-// console.log(process.env.CLOUDINARY_API_KEY);
-// console.log(cloudinary.config());
